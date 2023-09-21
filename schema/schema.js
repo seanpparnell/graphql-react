@@ -10,10 +10,6 @@ const {
   GraphQLNonNull,
 } = graphql;
 
-// const users = [
-//   { id: "23", firstName: "Tom", age: 52 },
-//   { id: "47", firstName: "Bob", age: 39 },
-// ];
 
 const CompanyType = new GraphQLObjectType({
   name: "Company",
@@ -48,16 +44,6 @@ const UserType = new GraphQLObjectType({
     },
   }),
 });
-
-// const EditUserInputType = new GraphQLInputObjectType({
-//   name: "EditUserInput",
-//   fields: {
-//     id: { type: new GraphQLNonNull(GraphQLString) },
-//     firstName: { type: GraphQLString },
-//     age: { type: GraphQLInt },
-//     companyId: { type: GraphQLString },
-//   },
-// });
 
 
 const RootQuery = new GraphQLObjectType({
